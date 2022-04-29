@@ -16,12 +16,15 @@ console.log(arr[1])
 
 const obt = {a: 1, b: 2, d: 3};
  */
+
 // alert('Hello')
 /* const result = confirm('Are you ok?');
 console.log(result); */
+
 /* const answer = prompt('are you 18 old', '18');
 console.log(typeof(answer)); */
- const answers = [];
+
+ /* const answers = [];
  answers[0] = prompt('What is your name?', '');
  answers[1] = prompt('What is your last name?', '');
  answers[2] = prompt('How old are you?', '');
@@ -29,5 +32,14 @@ console.log(typeof(answer)); */
  answers[4] = prompt('How are you?', '');
 
  document.write(answers);
+ */
+
+ let incr = 10,
+     decr = 10;
+ incr++;
+ decr--;
+ console.log(incr);
+ console.log(decr);
+
 
 
