@@ -22,7 +22,9 @@
 Проверить, чтобы все работало без ошибок в консоли */
 
 'use strict';
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+// ! 1 block
+/*const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
 const personalMovieDB = {
     count: numberOfFilms,
@@ -40,4 +42,31 @@ const a = prompt('Один из последних просмотренных ф
 personalMovieDB.movies[a] = b;
 personalMovieDB.movies[c] = d;
 
-console.log(personalMovieDB);
+console.log(personalMovieDB); */
+// ! 2 block
+/* if (5==7) {
+    console.log('Ok');
+} else {
+    console.log('Error');
+} */
+// ! 3 block
+
+const num = 50;
+
+switch (num) {
+    case 49:
+        console.log('False');
+        break;
+    case 100:
+        console.log('False');
+        break;
+    case 88:
+        console.log('False');
+        break;
+    case 51:
+        console.log('True');
+        break;
+    default :
+        console.log('Never');
+        break;                
+}
