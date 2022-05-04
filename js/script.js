@@ -131,3 +131,111 @@ if (hamburger === 3 && cola || fries === 3 && nuggets) {
 } */
 
 let num = 50;
+const num1 = 60;
+
+/* while (num < 55) {
+    console.log(num),
+    num++;
+}; */
+
+do {
+    console.log(num);
+    num++;
+}
+while (num < 55);
+
+for (let i = 1; i < 8; i++ ) {
+    if (i === 5) {
+        // break
+        continue
+    }
+    console.log(i);
+}
+
+/* let result = '';
+const length = 9;
+for (let i = 1; i < length; i++) {
+    for (let j = 0; j < i; j++) {
+        result += '*';
+    }
+    result += '\n'; 
+}   
+    console.log(result); */
+
+first: for (let i = 0; i < 3; i++) {
+    console.log('first level:', i);
+    for (let j = 0; j < 3; j++) {
+        console.log('second level:', j);
+        for (let k = 0; k < 3; k++) {
+             if (k === 2) break first;
+            console.log('third level:', k);
+        }    
+    }
+}    
+
+for (let i = 2; i < 11; i++) {
+    if (i % 2 === 0){
+        console.log(i);
+    } 
+}
+
+let num2 = 5;
+while (num2 <= 10) {
+    console.log(num2),
+    num2++;
+}
+
+do {
+    console.log(num2),
+    num2++;  
+}
+while (num2 <= 10);
+
+for (let i = 2; i <= 16; i++) {
+     if (i % 2 === 0) {
+             continue;
+    } else {
+         console.log(i);
+         }
+}
+
+let x = 2;
+while (x < 16) {
+    x++;
+    if (x % 2 != 0) {
+        console.log(x);
+    }
+}
+
+for (let i = 20; i > 9; i--) {
+     if (i === 13){
+        break
+     } 
+     console.log(i);
+}
+
+const arrayOfNumbers = [];
+
+    for (let i = 1; i < 11; i++) {
+        arrayOfNumbers[i - 1] = i;
+    }
+
+    console.log(arrayOfNumbers);
+
+
+    
+const lines = 5;
+let result = '';
+
+for (let i = 0; i <= lines; i++) {
+    for (let j = 0; j < lines - i; j++) {
+        result += " ";
+    }
+    for (let j = 0; j < 2 * i + 1; j++) {
+        result += "*";
+    }
+    result += "\n";
+}
+
+console.log(result)    
+    
