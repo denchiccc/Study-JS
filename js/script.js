@@ -51,7 +51,7 @@ console.log(personalMovieDB); */
 } */
 // ! 3 block
 
-const num = 50;
+/* const num = 50;
 
 switch (num) {
     case 49:
@@ -69,4 +69,65 @@ switch (num) {
     default :
         console.log('Never');
         break;                
+} */
+
+// ! 4 block 
+
+/* const hamburger = true,
+      fries = true;
+
+if (hamburger && fries) {
+    console.log('Я сыт')
+} */
+
+
+/* const hamburger = 3,
+      fries = 1,
+      cola = 1;
+
+      console.log(hamburger === 3 && cola && fries);
+
+if (hamburger === 3 && cola === 1 && fries) {
+    console.log('Все сыты')
+} else {
+    console.log('Мы уходим')
+} */
+
+/* const hamburger = 3,
+      fries = 2,
+      cola = 2,
+      naggets = 1;
+
+      console.log(hamburger === 2 && naggets === 2 || cola === 2 && fries)
+
+if (hamburger === 2 && naggets === 2 || cola === 2 && fries === 2) {
+    console.log('Все сыты')
+} else {
+    console.log('Мы уходим')
 }
+
+let denisReport, ivanReport, sashaReport, genyReport = 'date';
+    console.log(denisReport || ivanReport || sashaReport || genyReport);
+
+
+console.log( NaN || 2 || undefined );    
+console.log( NaN && 2 && undefined );    
+console.log( 1 && 2 && 3 );    
+console.log( !1 && 2 || !3 );    
+console.log( 25 || null && !3 );    
+console.log( NaN || null || !3 || undefined || 5);    
+console.log( NaN || null && !3 && undefined || 5);
+console.log( 5 === 5 && 3 > 1 || 5);
+ */
+
+
+/* const hamburger = 3;
+const fries = 3;
+const cola = 0;
+const nuggets = 2;
+ 
+if (hamburger === 3 && cola || fries === 3 && nuggets) {
+   console.log('Done!')
+} */
+
+let num = 50;
