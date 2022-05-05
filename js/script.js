@@ -130,15 +130,15 @@ if (hamburger === 3 && cola || fries === 3 && nuggets) {
    console.log('Done!')
 } */
 
-let num = 50;
+/* let num = 50;
 const num1 = 60;
-
+ */
 /* while (num < 55) {
     console.log(num),
     num++;
 }; */
 
-do {
+/* do {
     console.log(num);
     num++;
 }
@@ -162,7 +162,7 @@ for (let i = 1; i < length; i++) {
 }   
     console.log(result); */
 
-first: for (let i = 0; i < 3; i++) {
+/* first: for (let i = 0; i < 3; i++) {
     console.log('first level:', i);
     for (let j = 0; j < 3; j++) {
         console.log('second level:', j);
@@ -237,5 +237,64 @@ for (let i = 0; i <= lines; i++) {
     result += "\n";
 }
 
-console.log(result)    
+console.log(result)     */ 
+
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    films: {},
+    genres: [],
+    privat: false
+};
+for (let i = 0; i < 2; i++){
+    const a = prompt('Один из последних просмотренных фильмов?', ''),
+          b = prompt('На сколько оцените его?', '');
+    if (a != null && b != null && a != '' && b != '' && a.length < 50){
+        personalMovieDB.movies[a] = b;
+        console.log('Ok')
+    }  
+
+    else {
+        console.log('Error');
+        i--;
+    }
     
+}
+
+if (personalMovieDB.count <= 10){
+    console.log("Просмотрено довольно мало фильмов");
+    alert("Просмотрено довольно мало фильмов");
+} 
+else if (11 < personalMovieDB.count && personalMovieDB.count <= 30){
+    console.log("Вы классический зритель");
+    alert("Вы классический зритель");
+}
+else if (personalMovieDB.count > 30){
+    console.log("Вы киноман");
+    alert("Вы киноман");
+} else {
+    console.log("Произошла ошибка");
+    alert("Произошла ошибка");
+}
+
+ /* for (let i = 0; i < 2; i++){
+    const a = prompt('Один из последних любимых актеров?', ''),
+          b = prompt('На сколько баллов он тянет?', '');
+      
+
+    personalMovieDB.actors[a] = b; */
+// }
+
+let c = 1;
+while (c < 3){
+    const g = prompt('how are you', '');
+    const f = prompt('what', '');
+    personalMovieDB.films[g] = f;
+    c++;
+} 
+
+console.log(personalMovieDB);
+     
